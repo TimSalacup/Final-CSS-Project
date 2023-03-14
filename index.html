@@ -13,7 +13,11 @@
   </head>
   <body>
     <section id="landing">
-      <!-- NAV -->
+      <!-- 
+        
+        NAV 
+      
+      -->
       <nav>
         <div class="row">
           <div class="nav flex">
@@ -31,22 +35,32 @@
             </a>
             <div class="nav__links flex">
               <ul class="nav__links--list flex">
-                <li><a href="#" class="nav__link">About</a></li>
-                <li><a href="#" class="nav__link">Blog</a></li>
-                <li><a href="#" class="nav__link">Pricing</a></li>
-                <li><a href="#" class="nav__link">Contact Us</a></li>
+                <li><a href="#" class="nav__link hover__effect hover__effect--nav">About</a></li>
+                <li><a href="#" class="nav__link hover__effect hover__effect--nav">Blog</a></li>
+                <li><a href="#" class="nav__link hover__effect hover__effect--nav">Pricing</a></li>
+                <li><a href="#" class="nav__link hover__effect hover__effect--nav">Contact Us</a></li>
               </ul>
               <div class="nav__links--log-in flex">
                 <div>
-                  <a href="#" class="nav__link--log-in">Login</a>
-                </div>
+                  <ul>
+                    <li>
+                      <a href="#" class="nav__link nav__link--log-in hover__effect hover__effect--nav">Login</a>
+                    </li> 
+                  </ul>
+                  </div>
                 <a href="#" class="btn">Sign Up</a>
               </div>
             </div>
           </div>
         </div>
       </nav>
-      <!-- HEADER -->
+
+      <!-- 
+        
+        HEADER 
+      
+      -->
+
       <header>
         <div class="container">
           <div class="row header__row">
@@ -89,7 +103,12 @@
     </section>
     <main>
       <section id="main">
-        <!-- FEATURES -->
+        <!-- 
+          
+          FEATURES 
+        
+        -->
+
         <div class="container">
           <div class="row features__row">
             <span class="section__name section__name--features">
@@ -209,7 +228,13 @@
             </div>
           </div>
         </div>
-        <!-- QUALITY WORK-->
+
+        <!-- 
+          
+          QUALITY WORK
+        
+        -->
+
         <div class="container">
           <div class="row quality-work__row">
             <div class="section__description quality-work__description">
@@ -238,7 +263,13 @@
             </div>
           </div>
         </div>
-        <!-- STEPS -->
+
+        <!--
+          
+          STEPS 
+        
+        -->
+
         <div class="container">
           <div class="row steps__row">
             <div class="steps__img--wrapper">
@@ -288,7 +319,11 @@
             </div>
           </div>
         </div>
-        <!-- VALUES -->
+        <!--
+          
+          VALUES 
+        
+        -->
         <div class="container">
           <div class="row values__row">
             <div class="values__description">
@@ -305,7 +340,10 @@
               <div class="values__features">
                 <div class="values__feature">
                   <div class="values__feature--title">
-                    <i class="fas fa-dollar-sign dollar__logo"></i> Affordable
+                    <div class="dollar__logo">
+                      <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    Affordable
                   </div>
                   <div class="values__feature--para">
                     We promise to offer you the best rate we can - at par with
@@ -314,11 +352,14 @@
                 </div>
                 <div class="values__feature">
                   <div class="values__feature--title">
-                    <i class="fas fa-dollar-sign dollar__logo"></i> Affordable
+                    <div class="briefcase__logo">
+                      <i class="fas fa-briefcase"></i>
+                    </div>
+                    Professionalism
                   </div>
                   <div class="values__feature--para">
-                    We promise to offer you the best rate we can - at par with
-                    the industry standard.
+                    We assure you that our templates are designed and created by
+                    professional designers.
                   </div>
                 </div>
               </div>
@@ -327,12 +368,186 @@
             <figure class="values__img">
               <img
                 src="https://treact.owaiskhan.me/static/media/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg"
-                alt=""
+                alt="random update"
               />
             </figure>
           </div>
         </div>
+        <!-- 
+        
+        PRICING 
+      
+      -->
+        <div class="container">
+          <div class="row pricing__row">
+            <span class="section__name section__name--pricing">PRICING</span>
+            <h1 class="section__title section__title--pricing">
+              Reasonable & Flexible <span class="purple">Plans.</span>
+            </h1>
+            <div class="pricing__subtitle--wrapper">
+              <h3 class="pricing__subtitle section__subtitle--pricing">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </h3>
+            </div>
+            <div class="prices">
+              <div class="price">
+                <div class="price__type price__type--personal">
+                  <span class="price__name">PERSONAL</span>
+                  <span class="price__number">$17.99</span>
+                  <span class="monthly">MONTHLY</span>
+                </div>
+                <div class="price__description">
+                  <ul class="price__list">
+                    <li class="personal__list--title price__list--title">
+                      For Individuals
+                    </li>
+                    <li class="price__list--item">30 Templates</li>
+                    <li class="price__list--item">7 Landing Pages</li>
+                    <li class="price__list--item">12 Internal Pages</li>
+                    <li class="price__list--item">Basic Assistance</li>
+                  </ul>
+                </div>
+                <div class="pricing__button">
+                  <button class="personal__button pricing__button--hover">BUY NOW</button>
+                </div>
+              </div>
+              <div class="price price__business">
+                <div class="price__type price__type--business">
+                  <span class="price__name price__name--business"
+                    >BUSINESS</span
+                  >
+                  <span class="price__number">$37.99</span>
+                  <span class="monthly monthly__business">MONTHLY</span>
+                </div>
+                <div class="price__description price__description--business">
+                  <ul class="price__list price__list--business">
+                    <li class="price__list--title">For Small Businesses</li>
+                    <li class="price__list-item--business">60 Templates</li>
+                    <li class="price__list-item--business">15 Landing Pages</li>
+                    <li class="price__list-item--business">
+                      22 Internal Pages
+                    </li>
+                    <li class="price__list-item--business">
+                      Priority Assistance
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing__button pricing__button--business">
+                  <button class="business__button pricing__button--hover">
+                    BUY NOW
+                  </button>
+                </div>
+              </div>
+              <div class="price">
+                <div class="price__type price__type--enterprise">
+                  <span class="price__name">ENTERPRISE</span>
+                  <span class="price__number">$57.99</span>
+                  <span class="monthly">MONTHLY</span>
+                </div>
+                <div class="price__description">
+                  <ul class="price__list">
+                    <li class="personal__list--title price__list--title">
+                      For Large Companies
+                    </li>
+                    <li class="price__list--item">90 Templates</li>
+                    <li class="price__list--item">27 Landing Pages</li>
+                    <li class="price__list--item">37 Internal Pages</li>
+                    <li class="price__list--item">Personal Assistance</li>
+                  </ul>
+                </div>
+                <div class="pricing__button">
+                  <button class="enterprise__button pricing__button--hover">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+<!-- 
+
+  FOOTER
+
+ -->
+
+    <footer>
+      <div class="container footer__container">
+        <div class="row footer__row">
+          <div class="links">
+            <div class="link__group">
+              <ul>
+              <li class="group__title">MAIN</li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Blog</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">FAQs</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Support</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">About Us</a></li>
+            </ul>
+          </div>
+          <div class="link__group">
+            <ul>
+              <li class="group__title">PRODUCT</li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Log In</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Personal</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Business</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Team</a></li>
+            </ul>
+          </div>
+          <div class="link__group">
+            <ul>
+              <li class="group__title">PRESS</li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Logos</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Events</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Stories</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Office</a></li>
+            </ul>
+          </div>
+          <div class="link__group">
+            <ul>
+              <li class="group__title">TEAM</li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Career</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Founders</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Culture</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Onboarding</a></li>
+            </ul>
+          </div>
+          <div class="link__group">
+            <ul>
+              <li class="group__title">LEGAL</li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">GPDR</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Privacy Policy</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Terms of Service</a></li>
+              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__info">
+          <div class="footer__logo">
+            <img
+            src="https://treact.owaiskhan.me/static/media/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
+            alt="Treact Logo"
+            class="footer__logo--img"
+            />
+            <span class="footer__logo--text">Treact Inc.</span>
+          </div>
+          <div class="footer__copyright">
+            <p class="copyright__text">&copy; Treact Inc. All Rights Reserved.</p> 
+          </div>
+          <div class="footer__info--links">
+            <div class="social__link">
+              <i class="fab fa-facebook-f social__img"></i>
+            </div>
+            <div class="social__link">
+              <i class="fab fa-twitter social__img"></i>
+            </div>
+            <div class="social__link">
+              <i class="fab fa-youtube social__img"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </footer>
   </body>
-</html>
+  </html>
+  
