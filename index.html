@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js"></script>
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -35,23 +36,73 @@
             </a>
             <div class="nav__links flex">
               <ul class="nav__links--list flex">
-                <li><a href="#" class="nav__link hover__effect hover__effect--nav">About</a></li>
-                <li><a href="#" class="nav__link hover__effect hover__effect--nav">Blog</a></li>
-                <li><a href="#" class="nav__link hover__effect hover__effect--nav">Pricing</a></li>
-                <li><a href="#" class="nav__link hover__effect hover__effect--nav">Contact Us</a></li>
+                <li>
+                  <a href="#" class="nav__link hover__effect hover__effect--nav"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav__link hover__effect hover__effect--nav"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav__link hover__effect hover__effect--nav"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav__link hover__effect hover__effect--nav"
+                    >Contact Us</a
+                  >
+                </li>
               </ul>
               <div class="nav__links--log-in flex">
-                <div>
-                  <ul>
-                    <li>
-                      <a href="#" class="nav__link nav__link--log-in hover__effect hover__effect--nav">Login</a>
-                    </li> 
-                  </ul>
+                <div class="nav__right">
+                  <div class="log-in__group">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          class="nav__link nav__link--log-in hover__effect hover__effect--nav"
+                          >Login</a
+                        >
+                      </li>
+                    </ul>
+                    <a href="#" class="btn">Sign Up</a>
                   </div>
-                <a href="#" class="btn">Sign Up</a>
+                </div>
+                <button class="btn__menu" onclick="openMenu()">
+                  <i class="fas fa-bars"></i>
+                </button>
               </div>
             </div>
           </div>
+        </div>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="" class="menu__link hover__effect hover__effect--nav">About</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link hover__effect hover__effect--nav">Blog</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link hover__effect hover__effect--nav">Pricing</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link hover__effect hover__effect--nav">Contact Us</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link hover__effect hover__effect--nav">Login</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link btn">Sign Up</a>
+            </li>
+          </ul>
         </div>
       </nav>
 
@@ -62,7 +113,7 @@
       -->
 
       <header>
-        <div class="container">
+        <div class="container header__container">
           <div class="row header__row">
             <div class="header__description">
               <div>
@@ -95,6 +146,7 @@
               <img
                 src="https://treact.owaiskhan.me/static/media/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
                 alt="Header image"
+                class="header__img"
               />
             </div>
           </div>
@@ -108,7 +160,6 @@
           FEATURES 
         
         -->
-
         <div class="container">
           <div class="row features__row">
             <span class="section__name section__name--features">
@@ -346,8 +397,10 @@
                     Affordable
                   </div>
                   <div class="values__feature--para">
-                    We promise to offer you the best rate we can - at par with
-                    the industry standard.
+                    <p class="values__para--text">
+                      We promise to offer you the best rate we can - at par with
+                      the industry standard.
+                    </p>
                   </div>
                 </div>
                 <div class="values__feature">
@@ -358,8 +411,10 @@
                     Professionalism
                   </div>
                   <div class="values__feature--para">
-                    We assure you that our templates are designed and created by
-                    professional designers.
+                    <p class="values__para--text">
+                      We assure you that our templates are designed and created
+                      by professional designers.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -409,7 +464,9 @@
                   </ul>
                 </div>
                 <div class="pricing__button">
-                  <button class="personal__button pricing__button--hover">BUY NOW</button>
+                  <button class="personal__button pricing__button--hover">
+                    BUY NOW
+                  </button>
                 </div>
               </div>
               <div class="price price__business">
@@ -457,7 +514,9 @@
                   </ul>
                 </div>
                 <div class="pricing__button">
-                  <button class="enterprise__button pricing__button--hover">BUY NOW</button>
+                  <button class="enterprise__button pricing__button--hover">
+                    BUY NOW
+                  </button>
                 </div>
               </div>
             </div>
@@ -465,7 +524,7 @@
         </div>
       </section>
     </main>
-<!-- 
+    <!-- 
 
   FOOTER
 
@@ -477,77 +536,198 @@
           <div class="links">
             <div class="link__group">
               <ul>
-              <li class="group__title">MAIN</li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Blog</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">FAQs</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Support</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">About Us</a></li>
-            </ul>
-          </div>
-          <div class="link__group">
-            <ul>
-              <li class="group__title">PRODUCT</li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Log In</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Personal</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Business</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Team</a></li>
-            </ul>
-          </div>
-          <div class="link__group">
-            <ul>
-              <li class="group__title">PRESS</li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Logos</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Events</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Stories</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Office</a></li>
-            </ul>
-          </div>
-          <div class="link__group">
-            <ul>
-              <li class="group__title">TEAM</li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Career</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Founders</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Culture</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Onboarding</a></li>
-            </ul>
-          </div>
-          <div class="link__group">
-            <ul>
-              <li class="group__title">LEGAL</li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">GPDR</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Privacy Policy</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Terms of Service</a></li>
-              <li class="link"><a href="#" class="no-cursor link__text hover__effect hover__effect--footer">Disclaimer</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__info">
-          <div class="footer__logo">
-            <img
-            src="https://treact.owaiskhan.me/static/media/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
-            alt="Treact Logo"
-            class="footer__logo--img"
-            />
-            <span class="footer__logo--text">Treact Inc.</span>
-          </div>
-          <div class="footer__copyright">
-            <p class="copyright__text">&copy; Treact Inc. All Rights Reserved.</p> 
-          </div>
-          <div class="footer__info--links">
-            <div class="social__link">
-              <i class="fab fa-facebook-f social__img"></i>
+                <li class="group__title">MAIN</li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Blog</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >FAQs</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Support</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
             </div>
-            <div class="social__link">
-              <i class="fab fa-twitter social__img"></i>
+            <div class="link__group">
+              <ul>
+                <li class="group__title">PRODUCT</li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Log In</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Personal</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Business</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Team</a
+                  >
+                </li>
+              </ul>
             </div>
-            <div class="social__link">
-              <i class="fab fa-youtube social__img"></i>
+            <div class="link__group">
+              <ul>
+                <li class="group__title">PRESS</li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Logos</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Events</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Stories</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Office</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="link__group">
+              <ul>
+                <li class="group__title">TEAM</li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Career</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Founders</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Culture</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Onboarding</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="link__group">
+              <ul>
+                <li class="group__title">LEGAL</li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >GPDR</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Terms of Service</a
+                  >
+                </li>
+                <li class="link">
+                  <a
+                    href="#"
+                    class="no-cursor link__text hover__effect hover__effect--footer"
+                    >Disclaimer</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__info">
+            <div class="footer__logo">
+              <img
+                src="https://treact.owaiskhan.me/static/media/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
+                alt="Treact Logo"
+                class="footer__logo--img"
+              />
+              <span class="footer__logo--text">Treact Inc.</span>
+            </div>
+            <div class="footer__copyright">
+              <p class="copyright__text">
+                &copy; Treact Inc. All Rights Reserved.
+              </p>
+            </div>
+            <div class="footer__info--links">
+              <div class="social__link">
+                <i class="fab fa-facebook-f social__img"></i>
+              </div>
+              <div class="social__link">
+                <i class="fab fa-twitter social__img"></i>
+              </div>
+              <div class="social__link">
+                <i class="fab fa-youtube social__img"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </footer>
   </body>
-  </html>
-  
+</html>
